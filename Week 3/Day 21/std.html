@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="heading">Student Profile</h1>
+
+        <p>Name: <span id="name">Ali</span></p>
+        <p>Course: Software Engineering</p>
+        <p>Day: 21</p>
+
+        <button id="changeName">Change Name</button>
+    </div>
+
+    <script>
+        const heading = document.getElementById("heading");
+        const nameSpan = document.getElementById("name");
+        const changeNameButton = document.getElementById("changeName");
+
+        changeNameButton.addEventListener("click", function () {
+            nameSpan.textContent = "John Doe";
+            heading.textContent = "Updated Student Profile";
+        });
+    </script>
+</body>
+</html>
